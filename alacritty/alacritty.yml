@@ -1,0 +1,34 @@
+window:
+  padding:
+    x: 5
+    y: 5
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+scrolling:
+  history: 1000
+  multiplier: 3
+
+background_opacity: 1
+
+font:
+  size: 13
+draw_bold_text_with_bright_colours: true
+
+cursor:
+  style:
+    shape: Block
+    blinking: Off
+  blink_interval: 750
+
+selection:
+  save_to_clipboard: false
+
+  live_config_reload: true
+
+  shell: 
+      program: /usr/bin/zsh
+
+key_bindings:
+  - { key: Return, mode: Super|Shift, action: SpawnNewInstance }
