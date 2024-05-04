@@ -1,1 +1,0 @@
-/home/shrey/.config/tmux/
