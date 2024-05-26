@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export ZSH_THEME="agnoster"
+export ZSH_THEME="robbyrussell"
 export DEFAULT_USER=${USER}
 export BROWSER=firefox
 
@@ -17,9 +17,7 @@ aws_prompt_info(){}
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
 ZSH_THEME="robbyrussell"
-
 
 
 # Set list of themes to pick from when loading at random
@@ -35,7 +33,6 @@ ZSH_THEME="robbyrussell"
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 #vi mode
-
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
@@ -75,6 +72,11 @@ ZSH_THEME="robbyrussell"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
+
+#History
+HISTSIZE=10000000
+SAVEHIST=10000000
+HISTFILE="$HOME/.local/share/zsh/zsh_history"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -120,9 +122,10 @@ alias b="brightnessctl s "
 alias open="xdg-open"
 alias vi="vim"
 alias kc="kubectl"
+alias tpt="trash-put"
 #alias sleep="systemctl suspend"
 
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
 
 eval $(thefuck --alias)
 
@@ -131,3 +134,5 @@ eval $(thefuck --alias)
 export PATH=$PATH:/home/shrey/.cargo/bin
 export PATH=$PATH:/home/shrey/Desktop/RustRover-233.13135.127/bin
 export PATH=$PATH:/home/shrey/Android/Sdk/ninja
+export PATH=$PATH:/home/shrey/Documents/goland/GoLand-2024.1/bin
+
